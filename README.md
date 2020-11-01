@@ -1,7 +1,7 @@
 # Auto-provisioning Grafana API with SaltStack 
 
 
-This repository salt state and script examples as part of the following article:
+This repository contains salt state and script examples as part of the following article:
 
 https://cap5.nl/grafana-tech-auto-provisioning-of-website-dashboards-at-scale-with-saltstack-and-the-grafana-api/
 
