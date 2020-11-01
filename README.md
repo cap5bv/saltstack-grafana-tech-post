@@ -1,4 +1,4 @@
-# Auto-provisioning Grafana API with SaltStack 
+# Auto-provisioning Grafana via the API with SaltStack 
 
 
 This repository contains salt state and script examples as part of the following article:
