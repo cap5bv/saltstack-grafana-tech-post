@@ -1,0 +1,2088 @@
+{
+  "folderId": 31,
+  "overwrite": true,
+  "dashboard": {
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "title": "{{ wpsite }}",
+    "uid": null,
+    "id": null,
+    "version": 1,
+    "tags": [
+      "website"
+    ],
+    "schemaVersion": 26,
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "links": [],
+  "panels": [
+    {
+      "cacheTimeout": null,
+      "datasource": "InfluxDB",
+      "description": "Monitoring of the HTTP Response - LAST STATE\n",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "decimals": 0,
+          "mappings": [
+            {
+              "id": 0,
+              "op": "=",
+              "text": "OK",
+              "type": 1,
+              "value": "200"
+            },
+            {
+              "from": "",
+              "id": 1,
+              "operator": "",
+              "text": "Created",
+              "to": "",
+              "type": 1,
+              "value": "201"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "operator": "",
+              "text": "Accepted",
+              "to": "",
+              "type": 1,
+              "value": "202"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "operator": "",
+              "text": "Non-Authoritative Information",
+              "to": "",
+              "type": 1,
+              "value": "203"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "operator": "",
+              "text": "No Content",
+              "to": "",
+              "type": 1,
+              "value": "204"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "operator": "",
+              "text": "Reset Content",
+              "to": "",
+              "type": 1,
+              "value": "205"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "operator": "",
+              "text": "Partial Content",
+              "to": "",
+              "type": 1,
+              "value": "206"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "operator": "",
+              "text": "Multi-Status",
+              "to": "",
+              "type": 1,
+              "value": "207"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "operator": "",
+              "text": "Already Reported",
+              "to": "",
+              "type": 1,
+              "value": "208"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "operator": "",
+              "text": "IM Used",
+              "to": "",
+              "type": 1,
+              "value": "209"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "operator": "",
+              "text": "Multiple Choices",
+              "to": "",
+              "type": 1,
+              "value": "300"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "operator": "",
+              "text": "Moved Permanently",
+              "to": "",
+              "type": 1,
+              "value": "301"
+            },
+            {
+              "from": "",
+              "id": 12,
+              "operator": "",
+              "text": "Moved temporarily",
+              "to": "",
+              "type": 1,
+              "value": "302"
+            },
+            {
+              "from": "",
+              "id": 13,
+              "operator": "",
+              "text": "Permanent Redirect",
+              "to": "",
+              "type": 1,
+              "value": "308"
+            },
+            {
+              "from": "",
+              "id": 14,
+              "operator": "",
+              "text": "Bad Request",
+              "to": "",
+              "type": 1,
+              "value": "400"
+            },
+            {
+              "from": "",
+              "id": 15,
+              "operator": "",
+              "text": "Unauthorized ",
+              "to": "",
+              "type": 1,
+              "value": "401"
+            },
+            {
+              "from": "",
+              "id": 16,
+              "operator": "",
+              "text": "Payment Required",
+              "to": "",
+              "type": 1,
+              "value": "402"
+            },
+            {
+              "from": "",
+              "id": 17,
+              "operator": "",
+              "text": "Forbidden",
+              "to": "",
+              "type": 1,
+              "value": "403"
+            },
+            {
+              "from": "",
+              "id": 18,
+              "operator": "",
+              "text": "Not Found",
+              "to": "",
+              "type": 1,
+              "value": "404"
+            },
+            {
+              "from": "",
+              "id": 19,
+              "operator": "",
+              "text": "Method Not Allowed",
+              "to": "",
+              "type": 1,
+              "value": "405"
+            },
+            {
+              "from": "",
+              "id": 20,
+              "operator": "",
+              "text": "Not Acceptable",
+              "to": "",
+              "type": 1,
+              "value": "406"
+            },
+            {
+              "from": "",
+              "id": 21,
+              "operator": "",
+              "text": "Proxy Authentication Required",
+              "to": "",
+              "type": 1,
+              "value": "407"
+            },
+            {
+              "from": "",
+              "id": 22,
+              "operator": "",
+              "text": "Request Timeout",
+              "to": "",
+              "type": 1,
+              "value": "408"
+            },
+            {
+              "from": "",
+              "id": 23,
+              "operator": "",
+              "text": "Conflict",
+              "to": "",
+              "type": 1,
+              "value": "409"
+            },
+            {
+              "from": "",
+              "id": 24,
+              "operator": "",
+              "text": "Gone",
+              "to": "",
+              "type": 1,
+              "value": "410"
+            },
+            {
+              "from": "",
+              "id": 25,
+              "operator": "",
+              "text": "Internal Server Error",
+              "to": "",
+              "type": 1,
+              "value": "500"
+            },
+            {
+              "from": "",
+              "id": 26,
+              "text": "N/A",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            },
+            {
+              "from": "",
+              "id": 27,
+              "text": "OK",
+              "to": "",
+              "type": 1,
+              "value": "1"
+            }
+          ],
+          "max": 0,
+          "min": 0,
+          "nullValueMode": "connected",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 1
+              },
+              {
+                "color": "semi-dark-orange",
+                "value": 300
+              },
+              {
+                "color": "semi-dark-red",
+                "value": 400
+              },
+              {
+                "color": "semi-dark-blue",
+                "value": 500
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 3,
+        "x": 0,
+        "y": 0
+      },
+      "id": 5,
+      "links": [],
+      "maxPerRow": 6,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.1.5",
+      "repeatDirection": "h",
+      "targets": [
+        {
+          "alias": "HTTP",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "http_response",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"http_response_code\") FROM \"http_response\" WHERE (\"server\" =~ /{{ wpsite }}/) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "http_response_code"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "server",
+              "operator": "=~",
+              "value": "/^$fqdn$/"
+            }
+          ]
+        },
+        {
+          "alias": "Search",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "http_response",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"response_string_match\") FROM \"http_response\" WHERE (\"server\" =~ /{{ wpsite }}/) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "response_string_match"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "server",
+              "operator": "=~",
+              "value": "/^$fqdn$/"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Status / String Search",
+      "type": "stat"
+    },
+    {
+      "alert": {
+        "alertRuleTags": {},
+        "conditions": [
+          {
+            "evaluator": {
+              "params": [
+                200
+              ],
+              "type": "gt"
+            },
+            "operator": {
+              "type": "and"
+            },
+            "query": {
+              "params": [
+                "A",
+                "5m",
+                "now"
+              ]
+            },
+            "reducer": {
+              "params": [],
+              "type": "avg"
+            },
+            "type": "query"
+          }
+        ],
+        "executionErrorState": "alerting",
+        "for": "5m",
+        "frequency": "1m",
+        "handler": 1,
+        "name": "HTTP status {{ wpsite }}",
+        "noDataState": "keep_state",
+        "notifications": []
+      },
+      "aliasColors": {},
+      "bars": false,
+      "cacheTimeout": null,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "InfluxDB",
+      "description": "Monitoring of the HTTP Response - ALERT GRAPH FOR HTTP RESPONSE",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "decimals": 0,
+          "mappings": [
+            {
+              "id": 0,
+              "op": "=",
+              "text": "OK",
+              "type": 1,
+              "value": "200"
+            },
+            {
+              "from": "",
+              "id": 1,
+              "operator": "",
+              "text": "Created",
+              "to": "",
+              "type": 1,
+              "value": "201"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "operator": "",
+              "text": "Accepted",
+              "to": "",
+              "type": 1,
+              "value": "202"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "operator": "",
+              "text": "Non-Authoritative Information",
+              "to": "",
+              "type": 1,
+              "value": "203"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "operator": "",
+              "text": "No Content",
+              "to": "",
+              "type": 1,
+              "value": "204"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "operator": "",
+              "text": "Reset Content",
+              "to": "",
+              "type": 1,
+              "value": "205"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "operator": "",
+              "text": "Partial Content",
+              "to": "",
+              "type": 1,
+              "value": "206"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "operator": "",
+              "text": "Multi-Status",
+              "to": "",
+              "type": 1,
+              "value": "207"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "operator": "",
+              "text": "Already Reported",
+              "to": "",
+              "type": 1,
+              "value": "208"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "operator": "",
+              "text": "IM Used",
+              "to": "",
+              "type": 1,
+              "value": "209"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "operator": "",
+              "text": "Multiple Choices",
+              "to": "",
+              "type": 1,
+              "value": "300"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "operator": "",
+              "text": "Moved Permanently",
+              "to": "",
+              "type": 1,
+              "value": "301"
+            },
+            {
+              "from": "",
+              "id": 12,
+              "operator": "",
+              "text": "Moved temporarily",
+              "to": "",
+              "type": 1,
+              "value": "302"
+            },
+            {
+              "from": "",
+              "id": 13,
+              "operator": "",
+              "text": "Permanent Redirect",
+              "to": "",
+              "type": 1,
+              "value": "308"
+            },
+            {
+              "from": "",
+              "id": 14,
+              "operator": "",
+              "text": "Bad Request",
+              "to": "",
+              "type": 1,
+              "value": "400"
+            },
+            {
+              "from": "",
+              "id": 15,
+              "operator": "",
+              "text": "Unauthorized ",
+              "to": "",
+              "type": 1,
+              "value": "401"
+            },
+            {
+              "from": "",
+              "id": 16,
+              "operator": "",
+              "text": "Payment Required",
+              "to": "",
+              "type": 1,
+              "value": "402"
+            },
+            {
+              "from": "",
+              "id": 17,
+              "operator": "",
+              "text": "Forbidden",
+              "to": "",
+              "type": 1,
+              "value": "403"
+            },
+            {
+              "from": "",
+              "id": 18,
+              "operator": "",
+              "text": "Not Found",
+              "to": "",
+              "type": 1,
+              "value": "404"
+            },
+            {
+              "from": "",
+              "id": 19,
+              "operator": "",
+              "text": "Method Not Allowed",
+              "to": "",
+              "type": 1,
+              "value": "405"
+            },
+            {
+              "from": "",
+              "id": 20,
+              "operator": "",
+              "text": "Not Acceptable",
+              "to": "",
+              "type": 1,
+              "value": "406"
+            },
+            {
+              "from": "",
+              "id": 21,
+              "operator": "",
+              "text": "Proxy Authentication Required",
+              "to": "",
+              "type": 1,
+              "value": "407"
+            },
+            {
+              "from": "",
+              "id": 22,
+              "operator": "",
+              "text": "Request Timeout",
+              "to": "",
+              "type": 1,
+              "value": "408"
+            },
+            {
+              "from": "",
+              "id": 23,
+              "operator": "",
+              "text": "Conflict",
+              "to": "",
+              "type": 1,
+              "value": "409"
+            },
+            {
+              "from": "",
+              "id": 24,
+              "operator": "",
+              "text": "Gone",
+              "to": "",
+              "type": 1,
+              "value": "410"
+            },
+            {
+              "from": "",
+              "id": 25,
+              "operator": "",
+              "text": "Internal Server Error",
+              "to": "",
+              "type": 1,
+              "value": "500"
+            },
+            {
+              "from": "",
+              "id": 26,
+              "text": "N/A",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            },
+            {
+              "from": "",
+              "id": 27,
+              "text": "OK",
+              "to": "",
+              "type": 1,
+              "value": "1"
+            }
+          ],
+          "max": 0,
+          "min": 0,
+          "nullValueMode": "connected",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 1
+              },
+              {
+                "color": "semi-dark-orange",
+                "value": 300
+              },
+              {
+                "color": "semi-dark-red",
+                "value": 400
+              },
+              {
+                "color": "semi-dark-blue",
+                "value": 500
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 6,
+        "w": 10,
+        "x": 3,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 7,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeatDirection": "h",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "HTTP",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "http_response",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"http_response_code\") FROM \"http_response\" WHERE (\"server\" =~ /{{ wpsite }}/) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "rawQuery": false,
+          "refId": "A",
+          "resultFormat": "logs",
+          "select": [
+            [
+              {
+                "params": [
+                  "http_response_code"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "server",
+              "operator": "=",
+              "value": "https://{{ wpsite }}/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 200,
+          "yaxis": "left"
+        }
+      ],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Alert graph for HTTP status",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": null,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "600",
+          "min": "200",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": null,
+      "description": "HTML Widget with useful links",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 11,
+        "x": 13,
+        "y": 0
+      },
+      "id": 17,
+      "options": {
+        "content": "<p>Put useful links and info here</p>    ",
+        "mode": "html"
+      },
+      "pluginVersion": "7.1.0",
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Links",
+      "type": "text"
+    },
+    {
+      "alert": {
+        "alertRuleTags": {},
+        "conditions": [
+          {
+            "evaluator": {
+              "params": [
+                10
+              ],
+              "type": "gt"
+            },
+            "operator": {
+              "type": "and"
+            },
+            "query": {
+              "params": [
+                "A",
+                "5m",
+                "now"
+              ]
+            },
+            "reducer": {
+              "params": [],
+              "type": "avg"
+            },
+            "type": "query"
+          }
+        ],
+        "executionErrorState": "alerting",
+        "for": "5m",
+        "frequency": "1m",
+        "handler": 1,
+        "name": "Response time {{ wpsite }}",
+        "noDataState": "keep_state",
+        "notifications": []
+      },
+      "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "InfluxDB",
+      "description": "Response times measured by remote telegraf agent",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 5,
+      "gridPos": {
+        "h": 9,
+        "w": 11,
+        "x": 13,
+        "y": 3
+      },
+      "hiddenSeries": false,
+      "id": 3,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": false,
+        "total": false,
+        "values": true
+      },
+      "lines": false,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "server"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "http_response",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"response_time\") FROM \"http_response\" WHERE (\"server\" = 'https://{{ wpsite }}/') AND $timeFilter GROUP BY time($__interval), \"server\" fill(none)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "response_time"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "server",
+              "operator": "=",
+              "value": "https://{{ wpsite }}/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 10,
+          "yaxis": "left"
+        }
+      ],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "HTTP Response in ms",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": null,
+          "format": "s",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "alert": {
+        "alertRuleTags": {},
+        "conditions": [
+          {
+            "evaluator": {
+              "params": [
+                1
+              ],
+              "type": "lt"
+            },
+            "operator": {
+              "type": "and"
+            },
+            "query": {
+              "params": [
+                "B",
+                "5m",
+                "now"
+              ]
+            },
+            "reducer": {
+              "params": [],
+              "type": "avg"
+            },
+            "type": "query"
+          }
+        ],
+        "executionErrorState": "alerting",
+        "for": "5m",
+        "frequency": "10m",
+        "handler": 1,
+        "name": "String search {{ wpsite }}",
+        "noDataState": "keep_state",
+        "notifications": []
+      },
+      "aliasColors": {},
+      "bars": false,
+      "cacheTimeout": null,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "InfluxDB",
+      "description": "Monitoring of the HTTP Response - ALERT GRAPH FOR SEARCH STRING",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "decimals": 0,
+          "mappings": [
+            {
+              "id": 0,
+              "op": "=",
+              "text": "OK",
+              "type": 1,
+              "value": "200"
+            },
+            {
+              "from": "",
+              "id": 1,
+              "operator": "",
+              "text": "Created",
+              "to": "",
+              "type": 1,
+              "value": "201"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "operator": "",
+              "text": "Accepted",
+              "to": "",
+              "type": 1,
+              "value": "202"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "operator": "",
+              "text": "Non-Authoritative Information",
+              "to": "",
+              "type": 1,
+              "value": "203"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "operator": "",
+              "text": "No Content",
+              "to": "",
+              "type": 1,
+              "value": "204"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "operator": "",
+              "text": "Reset Content",
+              "to": "",
+              "type": 1,
+              "value": "205"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "operator": "",
+              "text": "Partial Content",
+              "to": "",
+              "type": 1,
+              "value": "206"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "operator": "",
+              "text": "Multi-Status",
+              "to": "",
+              "type": 1,
+              "value": "207"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "operator": "",
+              "text": "Already Reported",
+              "to": "",
+              "type": 1,
+              "value": "208"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "operator": "",
+              "text": "IM Used",
+              "to": "",
+              "type": 1,
+              "value": "209"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "operator": "",
+              "text": "Multiple Choices",
+              "to": "",
+              "type": 1,
+              "value": "300"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "operator": "",
+              "text": "Moved Permanently",
+              "to": "",
+              "type": 1,
+              "value": "301"
+            },
+            {
+              "from": "",
+              "id": 12,
+              "operator": "",
+              "text": "Moved temporarily",
+              "to": "",
+              "type": 1,
+              "value": "302"
+            },
+            {
+              "from": "",
+              "id": 13,
+              "operator": "",
+              "text": "Permanent Redirect",
+              "to": "",
+              "type": 1,
+              "value": "308"
+            },
+            {
+              "from": "",
+              "id": 14,
+              "operator": "",
+              "text": "Bad Request",
+              "to": "",
+              "type": 1,
+              "value": "400"
+            },
+            {
+              "from": "",
+              "id": 15,
+              "operator": "",
+              "text": "Unauthorized ",
+              "to": "",
+              "type": 1,
+              "value": "401"
+            },
+            {
+              "from": "",
+              "id": 16,
+              "operator": "",
+              "text": "Payment Required",
+              "to": "",
+              "type": 1,
+              "value": "402"
+            },
+            {
+              "from": "",
+              "id": 17,
+              "operator": "",
+              "text": "Forbidden",
+              "to": "",
+              "type": 1,
+              "value": "403"
+            },
+            {
+              "from": "",
+              "id": 18,
+              "operator": "",
+              "text": "Not Found",
+              "to": "",
+              "type": 1,
+              "value": "404"
+            },
+            {
+              "from": "",
+              "id": 19,
+              "operator": "",
+              "text": "Method Not Allowed",
+              "to": "",
+              "type": 1,
+              "value": "405"
+            },
+            {
+              "from": "",
+              "id": 20,
+              "operator": "",
+              "text": "Not Acceptable",
+              "to": "",
+              "type": 1,
+              "value": "406"
+            },
+            {
+              "from": "",
+              "id": 21,
+              "operator": "",
+              "text": "Proxy Authentication Required",
+              "to": "",
+              "type": 1,
+              "value": "407"
+            },
+            {
+              "from": "",
+              "id": 22,
+              "operator": "",
+              "text": "Request Timeout",
+              "to": "",
+              "type": 1,
+              "value": "408"
+            },
+            {
+              "from": "",
+              "id": 23,
+              "operator": "",
+              "text": "Conflict",
+              "to": "",
+              "type": 1,
+              "value": "409"
+            },
+            {
+              "from": "",
+              "id": 24,
+              "operator": "",
+              "text": "Gone",
+              "to": "",
+              "type": 1,
+              "value": "410"
+            },
+            {
+              "from": "",
+              "id": 25,
+              "operator": "",
+              "text": "Internal Server Error",
+              "to": "",
+              "type": 1,
+              "value": "500"
+            },
+            {
+              "from": "",
+              "id": 26,
+              "text": "N/A",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            },
+            {
+              "from": "",
+              "id": 27,
+              "text": "OK",
+              "to": "",
+              "type": 1,
+              "value": "1"
+            }
+          ],
+          "max": 0,
+          "min": 0,
+          "nullValueMode": "connected",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 1
+              },
+              {
+                "color": "semi-dark-orange",
+                "value": 300
+              },
+              {
+                "color": "semi-dark-red",
+                "value": 400
+              },
+              {
+                "color": "semi-dark-blue",
+                "value": 500
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 6,
+        "w": 10,
+        "x": 3,
+        "y": 6
+      },
+      "hiddenSeries": false,
+      "id": 9,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeatDirection": "h",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "String found",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "http_response",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"response_string_match\") FROM \"http_response\" WHERE (\"server\" =~ /$url/) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "rawQuery": false,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "response_string_match"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "server",
+              "operator": "=",
+              "value": "https://{{ wpsite }}/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "lt",
+          "value": 1,
+          "yaxis": "left"
+        }
+      ],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Alert graph for string search",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "Bytes measured from webserver access_log",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 0,
+        "y": 12
+      },
+      "hiddenSeries": false,
+      "id": 11,
+      "interval": "",
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": false,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "repeatDirection": "v",
+      "scopedVars": {
+        "fqdn": {
+          "selected": true,
+          "text": "{{ wpsite }}",
+          "value": "{{ wpsite }}"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Bytes/minute",
+          "groupBy": [
+            {
+              "params": [
+                "1m"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "virtualhost"
+              ],
+              "type": "tag"
+            }
+          ],
+          "hide": false,
+          "measurement": "access_log",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT sum(\"resp_bytes\") FROM \"access_log\" WHERE (\"virtualhost\" = '{{ wpsite }}') AND $timeFilter GROUP BY time(1m), \"virtualhost\"",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resp_bytes"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "virtualhost",
+              "operator": "=",
+              "value": "{{ wpsite }}"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 4000000,
+          "yaxis": "left"
+        }
+      ],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Bytes sent",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transformations": [],
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": null,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "Access log hit count per fixed time interval",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 8,
+        "y": 12
+      },
+      "hiddenSeries": false,
+      "id": 13,
+      "interval": "",
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": false,
+        "max": true,
+        "min": true,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": false,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null as zero",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "scopedVars": {
+        "fqdn": {
+          "selected": true,
+          "text": "{{ wpsite }}",
+          "value": "{{ wpsite }}"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Entries/minute",
+          "groupBy": [
+            {
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            }
+          ],
+          "hide": false,
+          "measurement": "access_log",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT count(\"request\") FROM \"access_log\" WHERE (\"virtualhost\" = '{{ wpsite }}') AND $timeFilter GROUP BY time(1m)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "request"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "count"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "virtualhost",
+              "operator": "=",
+              "value": "$fqdn"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "access log hits",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": null,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "Error log hit count per fixed time interval",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 16,
+        "y": 12
+      },
+      "hiddenSeries": false,
+      "id": 15,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": false,
+        "max": true,
+        "min": true,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "scopedVars": {
+        "fqdn": {
+          "selected": true,
+          "text": "{{ wpsite }}",
+          "value": "{{ wpsite }}"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Entries/minute",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            }
+          ],
+          "measurement": "error_log",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT count(\"message\") FROM \"error_log\" WHERE (\"path\" = '/var/log/{{ servertype }}/{{ wpsite }}-error.log') AND $timeFilter GROUP BY time(1m)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "message"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "count"
+              }
+            ]
+          ],
+          "tags": [
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "error log hits",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": null,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+    "style": "dark",
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ]
+    },
+    "timezone": ""
+  }
+}
